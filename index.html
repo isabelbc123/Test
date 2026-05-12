@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html lang = "en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Home</title>
+        </head>
+        <style>
+            .header {
+                padding: 20px;
+                margin: 0;
+                background-color:#EBC9C0;
+                text-align: center;
+                color: black;
+                font-family: Arial, sans-serif;
+                font-size: 24px;
+          
+            }
+            .nav {
+                float: left;
+                overflow: hidden;
+                background-color: #D48392;
+                border-top: 2px solid #B73736;
+                border-bottom: 2px solid #B73736;
+                width: 100%;
+                margin: 0;
+                padding: 0; 
+            }   
+
+            .nav li {
+                float: left;
+                list-style-type: none;
+            }
+
+            .nav li a {
+                float: left;
+                display: block;
+                text-align: center;
+                padding: 14px 16px;
+                color: #FBFFFF;
+                text-decoration: none;
+                font-family: Arial, sans-serif;
+      
+            }
+              
+            .nav li a:hover {
+                display: block;
+                background-color: #FBFFFF;
+                text-align: center;
+                color: #B73736;
+                text-decoration: none;
+            }
+
+            .active {
+                background-color: #B73736;
+                color: #FBFFFF;
+                text-decoration: none;
+            }
+            
+            .column {
+                float: left;
+                padding: 10px;
+            }
+      
+            .column.side {
+                width: 25%;
+                background-color: #CFAA7D;
+                color: black;
+                height: 100vh;
+            }
+
+            .column.middle {
+                width: 70%;
+                background-color: #FBFFFF;
+            }
+
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+           @media screen and (max-width: 600px) {
+                .column.side, .column.middle {
+                    width: 100%;
+                    }
+                } 
+            
+        </style>
+        <body>
+            <div class = header>
+                <h1>Isabel Chaney</h1>
+                <h3>Library Page, MLIS Student</h3>   
+            </div>
+            <ul class = "nav">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="associations.html">Associations</a></li>
+            </ul>
+
+            <div class = "row">
+                <div class = "column side">           
+                 <img src="headshot.jpeg" alt="Headshot of Isabel Chaney" class="headshot">
+                </div>
+                <div class="column middle">
+                    <p>I am a Master's of Library and Information Science (MLIS) student based in Washington, D.C. I'm pursuing a career in public librarianship and am particularly interested in collection development and digital equity.</p>
+                </div>
+            </div>
+        </body>
+       
+    </html>     
